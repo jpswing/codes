@@ -12,5 +12,4 @@ set showmatch " show match braces
 set matchtime=3 " time for vim to wait for showmatch
 set ruler
 
-nnoremap <F4> :w <CR> :!g++ % -o %< --std=c++14 -Wall -Wshadow -g -fsanitize=address -
-fsanitize=undefined && for i in ./in*; do echo $i; ./%< < $i; done <CR>
+nnoremap <F4> :w <CR> :!g++ % -o %< --std=c++14 -Wall -Wshadow -g -fsanitize=address -fsanitize=undefined && for i in ./in*; do echo $i; ./%< < $i; done <CR>
